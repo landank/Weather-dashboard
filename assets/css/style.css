@@ -1,0 +1,164 @@
+:root {
+    --main: #dfd2b5;
+
+    --alternate: #684817;
+
+    --accent: #ff9900;
+
+    --light: #104619;
+
+    --dark: #4b2e13;
+    
+    --border-radius: 25px;
+}
+  
+* {
+    box-sizing: border-box;
+    
+}
+  
+body {
+    width: fit-content;
+    height: 100vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 16px;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.25;
+}
+  
+main {
+    margin-left: 40px auto;
+    width: 94%;
+    min-height:100%;
+    overflow: auto;
+}
+
+.btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--main);
+    border: none;
+    outline: none;
+    background-color: var(--light);
+  
+    
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-1px, -1px);
+}
+  
+.btn:hover {
+    color: var(--main);
+    background-color: var(--accent);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+}
+  
+.btn-inline {
+    display: inline;
+}
+  
+.btn-back {
+    border-radius: var(--border-radius);
+    color: var(--main);
+    border: none;
+    outline: none;
+    background-color: var(--light);
+    box-shadow: 3px 3px var(--alternate);
+    transform: translate(-1px, -1px);
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+  
+.btn-back:hover {
+    color: var(--main);
+    background-color: var(--alternate);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+}
+  
+.hero {
+    padding: 3% 4%;
+    color: var(--main);
+}
+  
+
+.app-title {
+    font-size: 10rem;
+    background-color: var(--main);
+    color: var(--dark);
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    box-shadow: 6px 5px var(--light);
+}
+  
+.list-group {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: var(--border-radius);
+    background-color: var(--light);
+    color: var(--main);
+    text-decoration: none;
+
+}
+  
+.list-item:hover {
+    background-color: var(--dark);
+}
+  
+.icon {
+    width:10%;
+    height:10%;
+}
+
+.card {
+    margin: 0 0 20px 0;
+    border: 5px solid var(--dark);
+    border-radius: var(--border-radius);
+}
+  
+.card-header {
+    color: var(--main);
+    background-color: var(--dark);
+    border-radius: var(--border-radius)
+}
+
+.weather-card {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: var(--border-radius);
+    background-color: var(--light);
+    color: var(--main);
+    text-decoration: none;
+    margin-right: 10px;
+    height: 250px;
+    line-height: 1.8;
+}
+
+.five-day {
+    display:flex;
+}
+
+.subtitle {
+    display:none;
+}
+
+.history {
+    cursor: pointer;
+}
